@@ -5,4 +5,3 @@
 
 # WHAT IS THIS?
 This is a cosmetics plugin that lets your players add custom geometries to their skin from a UI!
-### Showcased here: https://www.youtube.com/watch?v=FJWu_CB14QU

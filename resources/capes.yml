@@ -1,5 +1,55 @@
-example_cape_1:
+infernal: #whatever you want
   name: "infernal" #Name of the folder your assets are in
   display-name: "Infernal" #Name shown in UI
   permission: "cosmetics.infernal" #Required permissions to use
   enabled: true #Should this be used?
+zombie:
+  name: "zombie"
+  display-name: "Zombie"
+  permission: "cosmetics.zombie"
+  enabled: true
+creeper:
+  name: "creeper"
+  display-name: "Creeper"
+  permission: "cosmetics.infernal"
+  enabled: true
+moyai:
+  name: "moyai"
+  display-name: "Moyai Head"
+  permission: "cosmetics.moyai"
+  enabled: true
+emoji_weary:
+  name: "emoji_weary"
+  display-name: "Weary Emoji"
+  permission: "cosmetics.weary"
+  enabled: true
+emoji_smirk:
+  name: "emoji_smirk"
+  display-name: "Smirking Emoji"
+  permission: "cosmetics.smirking"
+  enabled: true
+emoji_skull:
+  name: "emoji_skull"
+  display-name: "Skull Emoji"
+  permission: "cosmetics.skull"
+  enabled: true
+emoji_sad:
+  name: "emoji_sad"
+  display-name: "Sad Emoji"
+  permission: "cosmetics.sad"
+  enabled: true
+emoji_nerd:
+  name: "emoji_nerd"
+  display-name: "Smirking Emoji"
+  permission: "cosmetics.nerd"
+  enabled: true
+emoji_cool:
+  name: "emoji_cool"
+  display-name: "Sunglasses Emoji"
+  permission: "cosmetics.cool"
+  enabled: true
+emoji_angry:
+  name: "emoji_angry"
+  display-name: "Angry Emoji"
+  permission: "cosmetics.angry"
+  enabled: true

@@ -30,6 +30,16 @@ class Main extends PluginBase {
     $this->saveResource("phoenix/" . 'phoenix.json');
     $this->saveResource("phoenix/" . 'phoenix.png');
     $this->saveResource("capes/" . 'infernal.png');
+    $this->saveResource("capes/" . 'creeper.png');
+    $this->saveResource("capes/" . 'zombie.png');
+    $this->saveResource("capes/" . 'moyai.png');
+    $this->saveResource("capes/" . 'emoji_angry.png');
+    $this->saveResource("capes/" . 'emoji_cool.png');
+    $this->saveResource("capes/" . 'emoji_nerd.png');
+    $this->saveResource("capes/" . 'emoji_sad.png');
+    $this->saveResource("capes/" . 'emoji_skull.png');
+    $this->saveResource("capes/" . 'emoji_smirk.png');
+    $this->saveResource("capes/" . 'emoji_weary.png');
   
     $clothesconfig = new Config($this->getDataFolder() . "clothes.yml", Config::YAML);
     $capesconfig = new Config($this->getDataFolder() . "capes.yml", Config::YAML);

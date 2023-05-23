@@ -3,3 +3,8 @@ phoenix_clothes:
   display-name: "Phoenix" #Name shown in UI
   permission: "cosmetics.phoenix" #Required permissions to use
   enabled: true #Should this be used?
+fallenangel_clothes:
+  name: "fallenangel" #Name of the folder your assets are in
+  display-name: "Fallen Angel" #Name shown in UI
+  permission: "cosmetics.fallenangel" #Required permissions to use
+  enabled: true #Should this be used?

@@ -8,4 +8,4 @@ This is a cosmetics plugin that lets your players add custom geometries to their
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
 
 # DISCLAIMED
-I'll be real here, my dudes. A lot of this code is sloppy because I gutted it out of much older projects. I can't be asked to polish it right now. Some of the code in SkinUtils isn't even mine. I tried to credit who I could. 
+I'll be real here, my dudes. A lot of this code is sloppy because I gutted it out of my much older projects. I can't be asked to polish it right now. Some of the code in SkinUtils isn't even mine. I tried to credit who I could. 

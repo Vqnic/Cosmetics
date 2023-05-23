@@ -7,6 +7,10 @@
 This is a cosmetics plugin that lets your players add custom geometries to their skin from a UI!
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
 
+# TODO
+- Animated cosmetics!
+- Recode
+
 # SCREENSHOTS
 ![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/249a5259-e085-40f9-9b49-60adcbb67019)
 ![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/31a4afbb-4f47-4b84-b09e-9eb5580dd234)

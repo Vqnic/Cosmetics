@@ -24,7 +24,8 @@ class Main extends PluginBase {
     $this->saveResource('capes.yml');
     $this->saveResource('messages.yml');
   
-  
+    $this->saveResource("firegod/" . 'firegod.json');
+    $this->saveResource("firegod/" . 'firegod.png');
     $this->saveResource("fallenangel/" . 'fallenangel.json');
     $this->saveResource("fallenangel/" . 'fallenangel.png');
     $this->saveResource("phoenix/" . 'phoenix.json');

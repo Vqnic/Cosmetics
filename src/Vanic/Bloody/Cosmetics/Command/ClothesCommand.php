@@ -28,10 +28,11 @@ class ClothesCommand extends Command {
       $form = new SimpleForm(function (Player $player, int $data = null) {
         if ($data === null) return true;
         if($data == 0){
-          $player->setSkin(SkinUtils::getResetSkin($player->getSkin()));
-          $player->sendSkin();
           $this->main->getPlayerDataFile()->set($player->getName(), ["", $this->main->getPlayerDataFile()->get($player->getName())[1]]);
           $this->main->getPlayerDataFile()->save();
+          $player->setSkin(SkinUtils::getResetSkin($player->getSkin()));
+          $player->setSkin(SkinUtils::getCapeSkin($player->getSkin(), $this->main->getPlayerDataFile()->get($player->getName())[1]));
+          $player->sendSkin();
           $player->sendMessage($this->main->getMessagesConfig()->get('prefix') . $this->main->getMessagesConfig()->get('unequip'));
         }else {
           $permission = $this->main->getClothes()[$data - 1]['permission'];

@@ -1,3 +1,8 @@
+coin:
+  name: "coin"
+  display-name: "Coin"
+  permission: "cosmetics.coin"
+  enabled: true
 infernal: #whatever you want
   name: "infernal" #Name of the folder your assets are in
   display-name: "Infernal" #Name shown in UI

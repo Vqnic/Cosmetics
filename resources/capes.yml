@@ -50,7 +50,7 @@ emoji_sad:
   enabled: true
 emoji_nerd:
   name: "emoji_nerd"
-  display-name: "Smirking Emoji"
+  display-name: "Nerd Emoji"
   permission: "cosmetics.nerd"
   enabled: true
 emoji_cool:

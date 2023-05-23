@@ -21,7 +21,7 @@ class SkinUtils {
   }
   
   public static function layerSkin(Skin $skin, string $cosmetic) : Skin{
-
+    if($cosmetic === "") return $skin;
     $layer2 = self::skinToPNG($skin->getSkinData());
     $layer1 = imagecreatefrompng(self::$main->getDataFolder() ."$cosmetic/" .  "$cosmetic.png");
     

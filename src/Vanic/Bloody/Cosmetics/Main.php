@@ -24,6 +24,10 @@ class Main extends PluginBase {
     $this->saveResource('capes.yml');
     $this->saveResource('messages.yml');
   
+    $this->saveResource("phoenix/" . 'phoenix.json');
+    $this->saveResource("phoenix/" . 'phoenix.png');
+    $this->saveResource("capes/" . 'infernal.png');
+  
     $clothesconfig = new Config($this->getDataFolder() . "clothes.yml", Config::YAML);
     $capesconfig = new Config($this->getDataFolder() . "capes.yml", Config::YAML);
     

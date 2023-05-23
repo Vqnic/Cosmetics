@@ -37,7 +37,7 @@ class CapesCommand extends Command {
         }else {
           $permission = $this->main->getCapes()[$data - 1]['permission'];
           if ($player->hasPermission($permission)) {
-            $this->main->getPlayerDataFile()->set($player->getName(), [$this->main->getPlayerDataFile()->get($player->getName())[1], $this->main->getCapes()[$data - 1]['name']]);
+            $this->main->getPlayerDataFile()->set($player->getName(), [$this->main->getPlayerDataFile()->get($player->getName())[0], $this->main->getCapes()[$data - 1]['name']]);
             $this->main->getPlayerDataFile()->save();
             $player->setSkin(SkinUtils::getCapeSkin($player->getSkin(), $this->main->getCapes()[$data - 1]['name']));
             $player->sendSkin();

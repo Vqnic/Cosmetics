@@ -7,5 +7,9 @@
 This is a cosmetics plugin that lets your players add custom geometries to their skin from a UI!
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
 
+# SCREENSHOTS
+![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/249a5259-e085-40f9-9b49-60adcbb67019)
+![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/31a4afbb-4f47-4b84-b09e-9eb5580dd234)
+
 # DISCLAIMER
 I'll be real here, my dudes. A lot of this code is sloppy because I gutted it out of my much older projects. I can't be asked to polish it right now. Some of the code in SkinUtils isn't even mine. I tried to credit who I could. 

@@ -36,40 +36,45 @@ class Main extends PluginBase {
     $this->getServer()->getPluginManager()->registerEvents(new Events($this), $this);
     
     SkinUtils::init($this);
+    
     $loaded = 0;
     
     foreach($clothesconfig->getAll() as $clothes) {
       $name = $clothes['name'];
       if (file_exists($this->getDataFolder() . "$name/" . $name . ".png") && file_exists($this->getDataFolder() . "$name/" . $name . ".json")) {
-        $this->getLogger()->info("Loaded cosmetic '" . $name . "'!");
-        $permission = $clothes['permission'];
-        DefaultPermissions::registerPermission(new Permission($permission, "Cosmetic unlock."));
-        $this->clothes[] = array(
-          "name" => $clothes['name'],
-          "display-name" => $clothes['display-name'],
-          "permission" => $permission
-        );
-        $loaded++;
-      } else {
-        $this->getLogger()->warning("Yikes! There aren't any valid clothes to load!");
+        if($clothes['enabled']) {
+          $this->getLogger()->info("Loaded cosmetic '" . $name . "'!");
+          $permission = $clothes['permission'];
+          DefaultPermissions::registerPermission(new Permission($permission, "Cosmetic unlock."));
+          $this->clothes[] = array(
+            "name" => $clothes['name'],
+            "display-name" => $clothes['display-name'],
+            "permission" => $permission
+          );
+          $loaded++;
+        } else {
+          $this->getLogger()->warning("Yikes! There aren't any valid clothes to load!");
+        }
       }
     }
     $this->getLogger()->info("Loaded a total of $loaded clothes!");
-  
+    
     $loaded = 0;
   
     foreach($capesconfig->getAll() as $capes) {
       $name = $capes['name'];
       if (file_exists($this->getDataFolder() . "capes/" . $name . ".png")) {
-        $this->getLogger()->info("Loaded cape '" . $name . "'!");
-        $permission = $capes['permission'];
-        DefaultPermissions::registerPermission(new Permission($permission));
-        $this->capes[] = array(
-          "name" => $capes['name'],
-          "display-name" => $capes['display-name'],
-          "permission" => $permission
-        );
-        $loaded++;
+        if($capes['enabled']) {
+          $this->getLogger()->info("Loaded cape '" . $name . "'!");
+          $permission = $capes['permission'];
+          DefaultPermissions::registerPermission(new Permission($permission));
+          $this->capes[] = array(
+            "name" => $capes['name'],
+            "display-name" => $capes['display-name'],
+            "permission" => $permission
+          );
+          $loaded++;
+        }
       } else {
         $this->getLogger()->warning("Yikes! There aren't any valid capes to load!");
       }

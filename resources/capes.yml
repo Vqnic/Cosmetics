@@ -1,4 +1,5 @@
-#example_cape_1:
-#  name: "infernal" #Name of the folder your assets are in
-#  display-name: "Infernal" #Name shown in UI
-#  permission: "cosmetics.infernal" #Required permissions to use
+example_cape_1:
+  name: "infernal" #Name of the folder your assets are in
+  display-name: "Infernal" #Name shown in UI
+  permission: "cosmetics.infernal" #Required permissions to use
+  enabled: true #Should this be used?

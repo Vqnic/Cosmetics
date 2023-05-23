@@ -1,4 +1,5 @@
- #example_clothes_1:
- # name: "phoenix" #Name of the folder your assets are in
- # display-name: "Phoenix" #Name shown in UI
- # permission: "cosmetics.phoenix" #Required permissions to use
+phoenix_clothes:
+  name: "phoenix" #Name of the folder your assets are in
+  display-name: "Phoenix" #Name shown in UI
+  permission: "cosmetics.phoenix" #Required permissions to use
+  enabled: true #Should this be used?

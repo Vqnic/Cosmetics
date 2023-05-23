@@ -1,13 +1,18 @@
-coin:
-  name: "coin"
-  display-name: "Coin"
-  permission: "cosmetics.coin"
-  enabled: true
 infernal: #whatever you want
   name: "infernal" #Name of the folder your assets are in
   display-name: "Infernal" #Name shown in UI
   permission: "cosmetics.infernal" #Required permissions to use
   enabled: true #Should this be used?
+coin:
+  name: "coin"
+  display-name: "Coin"
+  permission: "cosmetics.coin"
+  enabled: true
+devil:
+  name: "devil"
+  display-name: "Devil"
+  permission: "cosmetics.devil"
+  enabled: true
 zombie:
   name: "zombie"
   display-name: "Zombie"
@@ -58,3 +63,8 @@ emoji_angry:
   display-name: "Angry Emoji"
   permission: "cosmetics.angry"
   enabled: true
+pride:
+  name: "pride"
+  display-name: "Pride"
+  permission: "cosmetics.pride"
+  enabled: false # 'false' by default because I understand that not everyone wants this particular cosmetic on their server due to personal beliefs. That's alright, you do you, but I have this here for those who want it.

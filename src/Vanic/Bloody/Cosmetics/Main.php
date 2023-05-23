@@ -29,6 +29,8 @@ class Main extends PluginBase {
     $this->saveResource("fallenangel/" . 'fallenangel.png');
     $this->saveResource("phoenix/" . 'phoenix.json');
     $this->saveResource("phoenix/" . 'phoenix.png');
+    $this->saveResource("capes/" . 'devil.png');
+    $this->saveResource("capes/" . 'pride.png');
     $this->saveResource("capes/" . 'coin.png');
     $this->saveResource("capes/" . 'infernal.png');
     $this->saveResource("capes/" . 'creeper.png');
@@ -66,11 +68,10 @@ class Main extends PluginBase {
             "permission" => $permission
           );
           $loaded++;
-        } else {
-          $this->getLogger()->warning("Yikes! There aren't any valid clothes to load!");
-        }
-      }
+        } else $this->getLogger()->warning("The clothes '$name' was not loaded because it is disabled.");
+      }else $this->getLogger()->warning("The clothes '$name' is set in the config, but the cosmetic assets are not present!");
     }
+    if($loaded == 0) $this->getLogger()->warning("Yikes! There aren't any valid clothes to load!");
     $this->getLogger()->info("Loaded a total of $loaded clothes!");
     
     $loaded = 0;
@@ -88,11 +89,11 @@ class Main extends PluginBase {
             "permission" => $permission
           );
           $loaded++;
-        }
-      } else {
-        $this->getLogger()->warning("Yikes! There aren't any valid capes to load!");
-      }
+        } else $this->getLogger()->warning("The cape '$name' was not loaded because it is disabled.");
+      } else $this->getLogger()->warning("The cape '$name' is set in the config, but the cosmetic assets are not present!");
     }
+    
+    if($loaded == 0) $this->getLogger()->warning("Yikes! There aren't any valid capes to load!");
     $this->getLogger()->info("Loaded a total of $loaded capes!");
     
     $this->saveResource('playerdata.yml');

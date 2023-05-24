@@ -31,7 +31,7 @@ class Events implements Listener {
         $player->setSkin(SkinUtils::getCapeSkin($player->getSkin(), $cape));
       }
     }
-    
     $player->sendSkin();
+    
   }
 }

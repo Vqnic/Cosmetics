@@ -101,6 +101,8 @@ class Main extends PluginBase {
   
     $this->getServer()->getCommandMap()->register(CapesCommand::class, new CapesCommand("capes", $this, "Equip your cosmetics!", ""));
     $this->getServer()->getCommandMap()->register(ClothesCommand::class, new ClothesCommand("clothes", $this, "Equip your cosmetics!", ""));
+  
+    $this->getScheduler()->scheduleRepeatingTask(new FlapTask($this), 20);
   }
   
   public function getPlayerDataFile(): Config {

@@ -4,7 +4,7 @@
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/ADEz9KBAW9)
 
 # WHAT IS THIS?
-This is a cosmetics plugin WITH ANIMATED COSMETICS that lets your players add custom geometries to their skin from a UI!
+This is a cosmetics plugin WITH ANIMATIONS that lets your players add custom geometries to their skin from a UI!
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
 
 # SCREENSHOTS

@@ -30,6 +30,8 @@ class Main extends PluginBase {
     $this->saveResource("fallenangel/" . 'fallenangel.png');
     $this->saveResource("phoenix/" . 'phoenix.json');
     $this->saveResource("phoenix/" . 'phoenix.png');
+    $this->saveResource("demon/" . 'demon.json');
+    $this->saveResource("demon/" . 'demon.png');
     $this->saveResource("capes/" . 'devil.png');
     $this->saveResource("capes/" . 'pride.png');
     $this->saveResource("capes/" . 'coin.png');

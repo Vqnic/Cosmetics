@@ -13,3 +13,8 @@ firegod_clothes:
   display-name: "God of Fire" #Name shown in UI
   permission: "cosmetics.firegod" #Required permissions to use
   enabled: true #Should this be used?
+demon_clothes:
+  name: "demon" #Name of the folder your assets are in
+  display-name: "Demon" #Name shown in UI
+  permission: "cosmetics.demon" #Required permissions to use
+  enabled: true #Should this be used?

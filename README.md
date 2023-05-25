@@ -1,8 +1,4 @@
-<img src="https://i.imgur.com/orRM0Ao.png"  width="600" height="175">
-
-
-[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/ADEz9KBAW9)
-
+![logo](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/76cb4464-5f49-43fc-b5f9-760dcbc8b291)
 # WHAT IS THIS?
 This is a cosmetics plugin WITH ANIMATIONS that lets your players add custom geometries to their skin from a UI!
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
@@ -21,3 +17,6 @@ I'll be real here, my dudes. A lot of this code is sloppy because I gutted it ou
 
 # CAPE/CLOTHES COMMISSIONS
 If you don't want to make your own assets and you want more than the bundled ones, join the Discord server at the top of this README. My prices are... very cheap.
+
+
+[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/ADEz9KBAW9)

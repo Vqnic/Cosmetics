@@ -3,9 +3,9 @@
 This is a cosmetics plugin WITH ANIMATIONS that lets your players add custom geometries to their skin from a UI!
 ### Showcased here: https://www.youtube.com/watch?v=3RN2qn3i6j8
 
-# SCREENSHOTS
-![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/249a5259-e085-40f9-9b49-60adcbb67019)
-![image](https://github.com/Vqnic/BloodyCosmetics/assets/77890259/31a4afbb-4f47-4b84-b09e-9eb5580dd234)
+# ANIMATED COSMETICS
+![sunset](https://github.com/Vqnic/Cosmetics/assets/77890259/49e7bf1e-b00b-4bb3-bc80-b49c773c491c)
+
 
 # DEVELOPER'S NOTES
 - This is open source code. I don't mind you modifying it or using it in your own projects. (Hell, the idea behind cosmetics on a server is blatantly unoriginal and isn't anywhere close to being mine.) I *do* mind you claiming it as your own. Now, don't get me wrong, if you've modified it so much that it isn't mine anymore, think  [Trigger's Broom](https://www.google.com/search?q=trigger%27s+broom+paradox&client=firefox-b-1-d&sxsrf=APwXEdc1u_76uVhyauhqF9XRAS44DR-fVQ%3A1684873372396&ei=nCBtZK7gF7ax5NoPrb-nuAE&ved=0ahUKEwiunum2ooz_AhW2GFkFHa3fCRcQ4dUDCA8&uact=5&oq=trigger%27s+broom+paradox&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQiwM6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQguEIoFENQCELADEEM6BwgAEIoFEEM6BQgAEIAEOgYIABAWEB46CQgAEBYQHhCLA0oECEEYAFCtAli5DGChE2gBcAF4AIABb4gBiAaSAQM1LjOYAQCgAQHIAQq4AQPAAQE&sclient=gws-wiz-serp) type shit, I don't care anymore. 

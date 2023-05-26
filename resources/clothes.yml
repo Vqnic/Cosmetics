@@ -18,8 +18,8 @@ demon_clothes:
   display-name: "Demon" #Name shown in UI
   permission: "cosmetics.demon" #Required permissions to use
   enabled: true #Should this be used?
-imp_clothes:
-  name: "imp" #Name of the folder your assets are in
-  display-name: "Imp" #Name shown in UI
-  permission: "cosmetics.imp" #Required permissions to use
+sunset_clothes:
+  name: "sunset" #Name of the folder your assets are in
+  display-name: "sunset" #Name shown in UI
+  permission: "cosmetics.sunset" #Required permissions to use
   enabled: true #Should this be used?

@@ -15,8 +15,8 @@ This is a cosmetics plugin WITH ANIMATIONS that lets your players add custom geo
 # DISCLAIMER
 I'll be real here, my dudes. A lot of this code is sloppy because I gutted it out of my much older projects. I can't be asked to polish it right now. Some of the code in SkinUtils isn't even mine. I tried to credit who I could. 
 
-# CAPE/CLOTHES COMMISSIONS
-If you don't want to make your own assets and you want more than the bundled ones, join the Discord server at the top of this README. My prices are... very cheap.
+# EXTRA CAPES/CLOTHES
+I sell some cosmetics on my discord, found at .dd/vqnic
 
 
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/ADEz9KBAW9)

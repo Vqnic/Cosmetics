@@ -16,7 +16,7 @@
 ## What is the difference between v2.0 and the previous version?
 This is a complete rewrite of the previous version because I noticed people will still referencing it years later and the code was, quite honestly, bad.
 
-This version has **multiple cosmetic types** that can be on the body at once (it was just capes and one model before), and **easier configuration**. There are also a lot of **perforname changes**.
+This version has **multiple cosmetic types** that can be on the body at once (it was just capes and one model before), and **easier configuration**. There are also a lot of **performance changes**.
 
 ## Future Things For This Project
 **Bringing animations back to this plugin...**

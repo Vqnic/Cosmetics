@@ -1,8 +1,9 @@
 # Cosmetics v2.0 Plugin For PocketMine-MP
+[Download Latest .phar Here](https://poggit.pmmp.io/ci/Vqnic/Cosmetics/~)
 
 **This is a plugin for MCBE servers that will allow your players to equip fun cosmetics without some of the limitations of other cosmetics plugins.**
 - Cosmetics can have custom 3D models and textures.
-- Multiple cosmetics can be equipped at once. (Your players can combinations of hats, wings, tails and shoes at the same time.)
+- Multiple cosmetics can be equipped at once. (Your players can have many combinations of hats, wings, tails and shoes at the same time.)
 - Capes can be equipped by your players as well with textures you provide.
 - Comes with default models and capes for easy use.
 - Each cosmetic has its own permission node, which could be used for VIP perks.
@@ -19,6 +20,10 @@ This is a complete rewrite of the previous version because I noticed people will
 This version has **multiple cosmetic types** that can be on the body at once (it was just capes and one model before), and **easier configuration**. There are also a lot of **performance changes**.
 
 ## Future Things For This Project
+
+**Adding more default cosmetics...**
+My goal is to make configuration as easy as possible, and this includes usable examples.
+
 **Bringing animations back to this plugin...**
 I want server owners to be able to specify animations for each individual cosmetic. I don't think the old animation system was good enough.
 

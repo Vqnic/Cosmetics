@@ -9,12 +9,9 @@ use Vanic\Cosmetics\Costume\Cosmetic\CosmeticType;
 use Vanic\Cosmetics\Main;
 
 class DatabaseManager {
-  private static Main $plugin;
   private static SQLite3 $db;
-  public static function init ($plugin) {
-    self::$plugin = $plugin;
-    $dataFolder = $plugin->getDataFolder();
-    self::$db = new SQLite3($dataFolder . "playerdata.db");
+  public static function init ($plugin): void {
+    self::$db = new SQLite3($plugin->getDataFolder() . "playerdata.db");
     //The names of rows in the database are identical to the names of the CosmeticTypes
     self::$db->exec('CREATE TABLE IF NOT EXISTS "playerdata" (' .
                     '"XUID" TEXT  PRIMARY KEY,' .

@@ -10,7 +10,6 @@ use Vanic\Cosmetics\Utils\DatabaseManager;
 use Vanic\Cosmetics\Utils\SkinUtils;
 
 class Main extends PluginBase {
-  private ConfigManager $configManager;
   private CostumeManager $costumeManager;
 
   public function onEnable(): void {
@@ -18,7 +17,7 @@ class Main extends PluginBase {
     SkinUtils::init($this);
     ConfigManager::init($this);
     DatabaseManager::init($this);
-    $this->costumeManager = new CostumeManager($this);
+    $this->costumeManager = new CostumeManager();
     $this->getServer()->getPluginManager()->registerEvents($this->costumeManager, $this);
     $this->getServer()->getCommandMap()->register($this->getName(), new CosmeticsCommand($this, "cosmetics", "Equip capes, hats, wings and more on your skin!", "/cosmetics"));
   }

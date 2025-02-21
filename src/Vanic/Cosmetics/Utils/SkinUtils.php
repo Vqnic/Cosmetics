@@ -26,13 +26,14 @@ class SkinUtils {
     $capeData = ""; //Will be overwritten if the player has a cape cosmetic equipped.
 
     //Consider the default body type of the player. If they explicitly logged on with a slim skin, keep it that way. Otherwise, set them to the default player model.
-    $bodyType = "geometry.custom";
-    if(str_contains($originalSkin->getGeometryName(), "Slim")) $bodyType = "geometry.customSlim";
+    $bodyType = "geometry.humanoid.custom";
+    var_dump($originalSkin->getGeometryName());
+    if(str_contains($originalSkin->getGeometryName(), "Slim")) $bodyType = "geometry.humanoid.customSlim";
     //This plugin can only work for players wearing 64x64 skins. If a player has too large of a skin, their skin is replaced with one that works.
 
     $layeredSkin = null;
     if(strlen($originalSkin->getSkinData()) != 16384) { //If the player logs on with an unsuable highres custom skin.
-      if($bodyType === "geometry.customSlim") $layeredSkin = imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_skinSlim.png");
+      if($bodyType === "geometry.humanoid.customSlim") $layeredSkin = imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_skinSlim.png");
       else $layeredSkin = imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_skin.png");
     }else $layeredSkin = self::skinToImage($originalSkin->getSkinData()); //The player's original skin.
 

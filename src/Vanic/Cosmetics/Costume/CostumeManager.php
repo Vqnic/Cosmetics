@@ -11,12 +11,9 @@ use Vanic\Cosmetics\Main;
 use Vanic\Cosmetics\Utils\DatabaseManager;
 
 class CostumeManager implements Listener {
-
-  private Main $plugin;
   private $playerCostumes;
 
-  public function __construct(Main $plugin) {
-    $this->plugin = $plugin;
+  public function __construct() {
     $this->playerCostumes = array();
   }
 

@@ -1,7 +1,12 @@
-name: BloodyCosmetics
-authors: ["Vanic"]
-description: BloodyCosmetics
-api: [4.0.0]
-version: 1.2.0
-main: Vanic\Bloody\Cosmetics\Main
+name: Cosmetics
+author: "Vanic"
+description: A plugin that lets player equip multiple 3D cosmetics on their skin through a UI.
+api: [5.0.0]
+version: 2.0.0
+main: Vanic\Cosmetics\Main
 load: POSTWORLD
+
+permissions:
+  cosmetics.command:
+    description: "Allows the user to run the /cosmetics command"
+    default: true

@@ -1,0 +1,42 @@
+#CAPE COSMETICS
+infernal_cape:
+  display_name: "Infernal Cape of Doom" #The text that shows up in the UI
+  type: "CAPE" #Can be CAPE, HEAD, UPPER_BODY, LOWER_BODY, or FEET
+  texture_filename: "infernal.png" #The texture found in /textures/
+  required_permission: 'infernal.wear' #The required permission
+  enabled: true #Set to false to have the config skip over this
+rich_cape:
+  display_name: "Coin Cape"
+  type: "CAPE"
+  texture_filename: "coin.png"
+  required_permission: 'coin.wear'
+  enabled: true
+
+#HEAD COSMETICS
+firegod_horns:
+  display_name: "Firegod Horns"
+  type: "HEAD"
+  texture_filename: "firegod.png"
+  required_permission: 'firegod.wear'
+  model_filename: "firegod.json" #(The filename in /models/ REQUIRED FOR ALL COSMETIC TYPES THAT AREN'T CAPES!!!!
+  enabled: true
+cat_headset:
+  display_name: "EGirl Kitty Headset"
+  type: "HEAD"
+  texture_filename: "cat_headset.png"
+  required_permission: 'cat_headset.wear'
+  model_filename: "cat_headset.json"
+  enabled: true
+
+#UPPER_BODY COSMETICS
+phoenix_wings:
+  display_name: "Phoenix Wings"
+  type: "UPPER_BODY"
+  texture_filename: "phoenix.png"
+  required_permission: 'phoenix.wear'
+  model_filename: "phoenix.json"
+  enabled: true
+
+#LOWER_BODY COSMETICS
+
+#FEET COSMETICS

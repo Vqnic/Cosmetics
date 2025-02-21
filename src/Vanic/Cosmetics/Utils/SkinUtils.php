@@ -23,22 +23,31 @@ class SkinUtils {
    */
   public static function getMergedSkin(Costume $costume) : Skin {
     $originalSkin = $costume->getWearer()->getSkin();
-
     $capeData = ""; //Will be overwritten if the player has a cape cosmetic equipped.
-    $geometryToMerge[] = json_decode(file_get_contents(self::$plugin->getDataFolder() . "/required/" . "default_player_model.json"), true); //Start off with the default player geometry.
 
-    //This plugin can really work for players wearing 64x64 skins. If a player has too large of a skin, their skin is replaced with one that works.
-    $layeredSkins = (strlen($originalSkin->getSkinData()) == 16384) ? self::skinToImage($originalSkin->getSkinData()) : imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_64x_texture.png");
+    //Consider the default body type of the player. If they explicitly logged on with a slim skin, keep it that way. Otherwise, set them to the default player model.
+    $bodyType = "geometry.custom";
+    if(str_contains($originalSkin->getGeometryName(), "Slim")) $bodyType = "geometry.customSlim";
+    //This plugin can only work for players wearing 64x64 skins. If a player has too large of a skin, their skin is replaced with one that works.
+
+    $layeredSkin = null;
+    if(strlen($originalSkin->getSkinData()) != 16384) { //If the player logs on with an unsuable highres custom skin.
+      if($bodyType === "geometry.customSlim") $layeredSkin = imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_skinSlim.png");
+      else $layeredSkin = imagecreatefrompng(self::$plugin->getDataFolder() . "/required/" . "default_player_skin.png");
+    }else $layeredSkin = self::skinToImage($originalSkin->getSkinData()); //The player's original skin.
+
+    $geometryToMerge[] = json_decode(file_get_contents(self::$plugin->getDataFolder() . "/required/" . "$bodyType.json"), true); //Start off with the default player geometry.
+
     foreach(CosmeticType::cases() as $type) {
       if (!is_null($costume->getCosmetic($type))) { //If that type of cosmetic is equipped at all
         if($type === CosmeticType::CAPE) $capeData = self::getDataFromImage($costume->getCosmetic($type)->getTexture());
         else {
-          $layeredSkins = self::layerPNGs($costume->getCosmetic($type)->getTexture(), $layeredSkins); //Merge the previous image with the new image to make one for the next round
+          $layeredSkin = self::layerPNGs($costume->getCosmetic($type)->getTexture(), $layeredSkin); //Merge the previous image with the new image to make one for the next round
           $geometryToMerge[] = json_decode(file_get_contents($costume->getCosmetic($type)->getModelPath()), true); //Keep adding more and more layers.
         }
       }
     }
-    return new Skin("Custom", self::getDataFromImage($layeredSkins), $capeData, "geometry.custom", self::mergeJSONToData($geometryToMerge));
+    return new Skin("Custom", self::getDataFromImage($layeredSkin), $capeData, $bodyType, self::mergeJSONToData($geometryToMerge));
   }
 
   private static function layerPNGs(GdImage $layer1, GdImage $layer2) : GdImage {

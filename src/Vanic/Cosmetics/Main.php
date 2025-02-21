@@ -30,23 +30,15 @@ class Main extends PluginBase {
   private function saveResourcesToDataFolder() : void {
     //This is where server owners add or remove cosmetics.
     $this->saveResource("cosmetics.yml");
-    //These serve as placeholders for invalid skins.
-    $this->saveResource("/required/default_player_model.json");
-    $this->saveResource("/required/default_player_64x_texture.json");
 
-    $modelsPath = $this->getDataFolder() . "/models/";
-    if(!file_exists($modelsPath)) {
-      @mkdir($modelsPath, 0777, true);
-      foreach(scandir($this->getResourceFolder() . "/models/") as $file) {
-        $this->saveResource("/models/" . $file);
-      }
-    }
-
-    $texturesPath = $this->getDataFolder() . "/textures/";
-    if(!file_exists($texturesPath)) {
-      @mkdir($texturesPath, 0777, true);
-      foreach(scandir($this->getResourceFolder() . "/textures/") as $file) {
-        $this->saveResource("/textures/" . $file);
+    $folderNames = ["/models/", "/required/", "/textures/"]; //Important folder names to populate with default files if needed.
+    foreach($folderNames as $folderName) {
+      $requiredPath = $this->getDataFolder() . $folderName;
+      if(!file_exists($requiredPath)) {
+        @mkdir($requiredPath, 0777, true);
+        foreach(scandir($this->getResourceFolder() . $folderName) as $file) {
+          $this->saveResource($folderName . $file);
+        }
       }
     }
   }

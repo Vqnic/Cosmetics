@@ -27,7 +27,6 @@ class SkinUtils {
 
     //Consider the default body type of the player. If they explicitly logged on with a slim skin, keep it that way. Otherwise, set them to the default player model.
     $bodyType = "geometry.humanoid.custom";
-    var_dump($originalSkin->getGeometryName());
     if(str_contains($originalSkin->getGeometryName(), "Slim")) $bodyType = "geometry.humanoid.customSlim";
     //This plugin can only work for players wearing 64x64 skins. If a player has too large of a skin, their skin is replaced with one that works.
 

@@ -11,6 +11,92 @@ rich_cape:
   texture_filename: "coin.png"
   required_permission: 'coin.wear'
   enabled: true
+mob_creeper_cape:
+  display_name: "Creeper Cape"
+  type: "CAPE"
+  texture_filename: "creeper.png"
+  required_permission: 'creeper.wear'
+  enabled: true
+mob_zombie_cape:
+  display_name: "Zombie Cape"
+  type: "CAPE"
+  texture_filename: "zombie.png"
+  required_permission: 'zombie.wear'
+  enabled: true
+moyai_head_emoji_cape:
+  display_name: "Moyai Head Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_moyai.png"
+  required_permission: 'emoji.moyai.wear'
+  enabled: true
+angry_emoji_cape:
+  display_name: "Angry Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_angry.png"
+  required_permission: 'emoji.angry.wear'
+emoji_cool_cape:
+  display_name: "Sunglasses Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_cool.png"
+  required_permission: 'emoji.cool.wear'
+  enabled: true
+emoji_nerd_cape:
+  display_name: "Nerd Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_nerd.png"
+  required_permission: 'emoji.nerd.wear'
+  enabled: true
+emoji_sad_cape:
+  display_name: "Sad Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_sad.png"
+  required_permission: 'emoji.sad.wear'
+  enabled: true
+emoji_skull_cape:
+  display_name: "Skull Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_skull.png"
+  required_permission: 'emoji.skull.wear'
+  enabled: true
+emoji_smirk_cape:
+  display_name: "Smirking Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_smirk.png"
+  required_permission: 'emoji.smirk.wear'
+  enabled: true
+emoji_weary_cape:
+  display_name: "Weary Emoji Cape"
+  type: "CAPE"
+  texture_filename: "emoji_weary.png"
+  required_permission: 'emoji.weary.wear'
+  enabled: true
+devil_cape:
+  display_name: "Devilish Cape"
+  type: "CAPE"
+  texture_filename: "devil.png"
+  required_permission: 'devil.wear'
+  enabled: true
+# Other miscellaneous CAPEs disabled by default that can be manually re-enabled if you think they'd be a good fit for your server's community.
+flag_us_cape:
+  display_name: "USA Flag Cape"
+  type: "CAPE"
+  texture_filename: "flag_us.png"
+  required_permission: 'flag_us.wear'
+  enabled: false
+flag_uk_cape:
+  display_name: "UK Flag Cape"
+  type: "CAPE"
+  texture_filename: "flag_uk.png"
+  required_permission: 'flag_uk.wear'
+  enabled: false
+pride_cape:
+  display_name: "Pride Cape"
+  type: "CAPE"
+  texture_filename: "pride.png"
+  required_permission: 'pride.wear'
+  enabled: false
+
+
 
 #HEAD COSMETICS
 firegod_horns:
@@ -28,6 +114,7 @@ cat_headset:
   model_filename: "cat_headset.json"
   enabled: true
 
+
 #UPPER_BODY COSMETICS
 phoenix_wings:
   display_name: "Phoenix Wings"
@@ -38,5 +125,11 @@ phoenix_wings:
   enabled: true
 
 #LOWER_BODY COSMETICS
-
+devil_tail:
+  display_name: "Imp Tail"
+  type: "LOWER_BODY"
+  texture_filename: "devil_tail.png"
+  required_permission: 'devil.tail.wear'
+  model_filename: "devil_tail.json"
+  enabled: true
 #FEET COSMETICS

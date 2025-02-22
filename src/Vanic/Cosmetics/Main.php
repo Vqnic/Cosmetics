@@ -29,7 +29,6 @@ class Main extends PluginBase {
   private function saveResourcesToDataFolder() : void {
     //This is where server owners add or remove cosmetics.
     $this->saveResource("cosmetics.yml");
-
     $folderNames = ["/models/", "/required/", "/textures/"]; //Important folder names to populate with default files if needed.
     foreach($folderNames as $folderName) {
       $requiredPath = $this->getDataFolder() . $folderName;
